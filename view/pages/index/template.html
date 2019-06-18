@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Email Reader with pop3</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <h1>Email Reader with POP3</h1>
+    <h2>Preencha as informações para se conectar:</h2>
+    <div class="main-form">
+        <form action="">
+            <div class="form-control">
+                <label for="email-host">HOST</label>
+                <input value="pop.gmail.com" type="text" id="email-host" />
+            </div>
+            <div class="form-control">
+                <label for="email-port">PORT</label>
+                <input value="995" type="number" id="email-port" />
+            </div>
+            <div class="form-control">
+                <label for="user-email">EMAIL</label>
+                <input value="samirchavess@gmail.com" type="email" id="user-email" />
+            </div>
+            <div class="form-control">
+                <label for="user-password">PASSWORD</label>
+                <input value="" type="password" id="user-password" />
+            </div>
+            <div class="form-control">
+                <label for="emails-length">EMAILS</label>
+                <input max="100" min="1" value="2" type="number" id="emails-length" />
+            </div>
+            <div class="form-control">
+                <input type="submit" value="enviar" />
+            </div>
+            <progress value="0" max="100"></progress>
+        </form>
+    </div>
+    <h2>Lista de email:</h2>
+    <div class="email-list">
+    </div>
+
+    <script src="./scripts/dom.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
